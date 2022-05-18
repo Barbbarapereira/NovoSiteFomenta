@@ -1,0 +1,275 @@
+ body {
+    background-color: white;
+}
+
+h1 {
+
+    font-family: monospace
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    outline: 0;
+}
+
+#f-navbar {
+    display: flex;
+    justify-content: end;
+}
+
+#f-navbar .nav-link {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+div.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    height: 80px;
+    padding-top: 20px;
+    transition: all 0.30s linear;
+    background: transparent;
+}
+
+.navbar.scroll {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    height: 80px;
+    background: white;
+
+}
+
+.navbar.scroll #f-navbar a {
+    color: rgb(97, 97, 97);
+    font-weight: 500;
+}
+
+.navbar.scroll #f-navbar .nav-link.faca-parte {
+    color: black;
+
+}
+
+#f-navbar li {
+    margin-right: 20px;
+}
+
+.avatar {
+    background: url(../img/preto\ e\ verde\ 1\ 1.png);
+    padding-top: 90px;
+    background-size: contain;
+    transition: all 0.20s linear;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 0;
+
+}
+
+.navbar.scroll .avatar {
+    background-image: url(../img/preto\ e\ verde\ 1\ 1.png);
+    width: 150px;
+    padding-top: 70px;
+    width: 20%;
+    transition: all 0.20s linear;
+}
+
+div#f-navbar.nav-item {
+    margin-top: 18px;
+    margin-right: 8px;
+}
+
+#f-navbar .nav-item:hover .nav-link {
+    color: #003B36;
+    transition: .5s;
+}
+
+#f-navbar .nav-item:after {
+    content: '';
+    border-bottom: 2px solid #39857c;
+    display: block;
+    transition: .3s ease;
+    transform: scaleX(0);
+}
+
+#f-navbar .nav-item:hover:after {
+    transform: scaleX(1);
+}
+
+#f-navbar .nav-link.faca-parte {
+    color: #3ff7e7;
+    font-weight: 600;
+}
+
+#f-navbar .nav-item:hover .nav-link.faca-parte {
+    color: #003B36;
+}
+
+
+
+#carouselExampleIndicators {
+    width: 500px;
+    border: 3px solid #f8f8f8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 150px;
+    background-color: #002F2E;
+}
+
+#manutencao {
+    margin-top: 60px;
+}
+
+#coluna1 {
+    padding-top: 230px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+img {
+    padding-top: 60px;
+    width: 500px;
+    padding-right: 10px;
+
+}
+
+.fade-in-text {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150px;
+    color: black;
+    animation: fadeIn linear 1.5s;
+    -webkit-animation: fadeIn linear 1.5s;
+    -moz-animation: fadeIn linear 1.5s;
+    -o-animation: fadeIn linear 1.5s;
+    -ms-animation: fadeIn linear 1.5s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+#footer {
+    padding: 20px;
+    background-color: #fff;
+    color: #616161;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer img {
+    width: 90px;
+}
+
+#footer #coluna1,
+#footer #coluna3 #title h6,
+#footer #icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer #infos {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #616161;
+}
+
+#footer #coluna3 {
+    padding-top: 200px;
+}
+
+#footer #coluna2 {
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 80px;
+}
+
+#footer #coluna2 img {
+
+    margin-top: -30px;
+    width: 15px;
+    padding-right: 7px;
+}
+
+#footer #coluna1-1 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-right: 0.5px solid #616161;
+}
+
+#footer p,
+#footer #coluna2 a {
+    color: #616161;
+    font-size: 13px;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+#footer a.facebook,
+a.instagram,
+a.linkedin {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #00A89C;
+    transition: 0.3s ease-in-out;
+}
+
+#footer a.facebook:hover {
+    background: #00238d;
+}
+
+#footer a.instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+#footer a.linkedin:hover {
+    background: #2389e9;
+}
+
+#footer a img {
+    width: 30px;
+}
+
+#footer #copyright p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    margin-top: 10px;
+}
